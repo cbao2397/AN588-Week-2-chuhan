@@ -1,0 +1,129 @@
+---
+title: "AN588-Week-2-chuhan"
+author: "Author: Lia"
+date: "Date: 2023-09-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Homework1
+Load the stringr package first. 
+```{r}
+library(stringr)
+```
+
+### Challenge 1
+```{r}
+v <-str_split("Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.", " ")
+v2 <- v[[1]]
+v2[seq(from=3, to=22, by=3)]
+```
+Challenge 1 complete :)
+
+### Challenge 2
+Define the matrix first.
+```{r}
+m <- matrix(data=1:80, nrow=8, ncol=10, byrow=FALSE)
+m
+```
+1. Extract the 2^nd^, 3^rd^, and 6^th^ columns. Assign to the variable **x1**.
+```{r}
+x1 <- m[,c(2, 3, 6)]
+x1
+```
+2. Extract the 6^th^ to 8^th^ row. Assign to the variable **x2**. 
+```{r}
+x2 <- m[c(6:8),]
+x2
+```
+3. Extract the elements from row 2, column 2 to row 6, column 9. Assign to the variable **x3**. 
+```{r}
+x3 <- m[2:6, 2:9]
+x3
+```
+Challenge 2 complete :)
+
+### Challenge 3
+Create the matrix first. 
+```{r}
+a <- array(data=400:1, dim=c(5, 5, 4, 4))
+a
+```
+Then run the code given in Module 4. 
+```{r}
+a[1, 1, 1, 2]
+```
+```{r}
+a[2, 3, 2, ]
+```
+```{r}
+a[1:5, 1:5, 3, 3]
+```
+About the overwriting part, basically you overwrite the value you have reassigned. 
+
+For example, m[7,1]<-564 will lead to the value at row 7 column 1 get overwritten as 564. 
+
+This applies to similar operations listed in Module 4.
+```{r}
+m[2:5, 4:8] <- 1
+m
+```
+The values from row 2, column 4 to row 5, column 8 get overwritten as 1. 
+
+Challenge 3 complete :)
+
+### Challenge 4
+Create the whole list for Primates.
+```{r}
+Lemuroidea <- c("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae",
+    "Daubentoniidae")
+Lorisoidea <- c("Lorisidae", "Galagidae")
+Tarsioidea <- c("Tarsiidae")
+Platyrrhini <- c("Cebidae", "Atelidae", "Pitheciidae")
+Catarrhini <- c("Cercopithecidae", "Hylobatidae", "Hominidae")
+Anthropoidea <- list(Platyrrhini, Catarrhini)
+names(Anthropoidea) <- list("Platyrrhini", "Catarrhini")
+Haplorhini <- list(Anthropoidea, Tarsioidea)
+names(Haplorhini) <- list("Anthropoidea", "Tarsioidea")
+Strepsirhini <- list(Lemuroidea, Lorisoidea)
+names(Strepsirhini) <- list("Lemuroidea", "Lorisoidea")
+Primates <- list(Haplorhini, Strepsirhini)
+names(Haplorhini) <- list("Anthropoidea", "Tarsioidea")
+names(Primates) <- list("Haplorihini", "Strepsirhini")
+Primates
+```
+I wonder if there is any method to simplify the code or improve it. 
+
+The code above is just repeating the code provided in Module 4. 
+
+Anyway, Challenge 4 complete :)
+
+### Challenge 5
+
+1. Create the matrix.   
+```{r}
+m3 <- matrix(data=c(3, 0, 1 ,23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2), nrow=5, ncol=3, byrow=TRUE)
+m3
+```
+2. Coerce the matrix to a data frame. 
+```{r}
+df <- data.frame(m3)
+df
+```
+3. Coerce the 2^nd^ column to be logical-valued, and 3^rd^ column to be factor-valued. 
+```{r}
+df2 <- data.frame(Col1=c(df$X1), Col2=c(as.logical(df$X2)), Col3=c(as.factor(df$X3)))
+df2
+```
+4. Show the data type of each variable in the dataframe. 
+```{r}
+str(df2)
+```
+According to the result of str() command, the data types are converted successfully. 
+
+Challenge 5 complete :)
+
+Homework 1 Complete :D
