@@ -23,6 +23,8 @@ v2[seq(from=3, to=22, by=3)]
 ```
 Challenge 1 complete :)
 
+***
+
 ### Challenge 2
 Define the matrix first.
 ```{r}
@@ -45,6 +47,8 @@ x3 <- m[2:6, 2:9]
 x3
 ```
 Challenge 2 complete :)
+
+***
 
 ### Challenge 3
 Create the matrix first. 
@@ -75,6 +79,8 @@ The values from row 2, column 4 to row 5, column 8 get overwritten as 1.
 
 Challenge 3 complete :)
 
+***
+
 ### Challenge 4
 Create the whole list for Primates.
 ```{r}
@@ -100,6 +106,8 @@ I wonder if there is any method to simplify the code or improve it.
 The code above is just repeating the code provided in Module 4. 
 
 Anyway, Challenge 4 complete :)
+
+***
 
 ### Challenge 5
 
