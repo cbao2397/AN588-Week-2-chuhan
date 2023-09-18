@@ -22,6 +22,7 @@ v2 <- v[[1]]
 v2[seq(from=3, to=22, by=3)]
 ```
 Challenge 1 complete :)
+*C: It is interesting how we both read this part of the challenge in different ways, because you started at 3 and then went by 3, which actually does give every 3rd word, while I started at 1 and went by 3, giving different answers. Looking at your code makes me want to reevaluate mine, so great job with this one!
 
 ***
 
@@ -41,6 +42,8 @@ x1
 x2 <- m[c(6:8),]
 x2
 ```
+*C: I did not realize this would work the same, but looking at it it's so much cleaner! Nice job! I also like how you differentiated your variables to show different sets for the challenges, I think I should do this with my own code.
+
 3. Extract the elements from row 2, column 2 to row 6, column 9. Assign to the variable **x3**. 
 ```{r}
 x3 <- m[2:6, 2:9]
@@ -66,6 +69,9 @@ a[2, 3, 2, ]
 ```{r}
 a[1:5, 1:5, 3, 3]
 ```
+*C: I like the additional explanation you have provided below about overwriting, but at first I was confused since I did not immediately recall the part of the module you were referencing. To improve this, perhaps provide a subheader to prompt the reader to know you are adding additional info related to content and not the challenges? Otherwise I really like that you included this!
+*C2: I just realized I do the same thing as this in my Challenge 4, so I will incorporate this into my own code as well!
+
 About the overwriting part, basically you overwrite the value you have reassigned. 
 
 For example, m[7,1]<-564 will lead to the value at row 7 column 1 get overwritten as 564. 
@@ -103,6 +109,8 @@ Primates
 ```
 I wonder if there is any method to simplify the code or improve it. 
 
+*C: I agree! When I first looked at it I was very intimidated, which is why I broke it into the two separate chunks of code that would fall under "Primates" as a whole (although I could have included that they fell under the umbrella of Primates in my code like you did, nice job!). It would be nice to find a way to simplify it.
+
 The code above is just repeating the code provided in Module 4. 
 
 Anyway, Challenge 4 complete :)
@@ -126,6 +134,8 @@ df
 df2 <- data.frame(Col1=c(df$X1), Col2=c(as.logical(df$X2)), Col3=c(as.factor(df$X3)))
 df2
 ```
+*C: I like your output of this much better because it is clear to read, and in fact made me realize that my own code gave an incorrect output and possibly got mixed up with a previous data frame. I do wonder though if there is a simplified version of code, but for now perhaps you could provide an explanation of what made you choose this way of finding the answer?
+
 4. Show the data type of each variable in the dataframe. 
 ```{r}
 str(df2)
@@ -135,3 +145,5 @@ According to the result of str() command, the data types are converted successfu
 Challenge 5 complete :)
 
 Homework 1 Complete :D
+
+*C: You did such an excellent job, overall it was wonderful to read and easily understood. I only really left notes on ways to organize your document for the reader's perspective to just give a clear understanding of what is going on. Your code made me want to rework my own to make it work better too! Thank you for allowing me to comment on your document :)
