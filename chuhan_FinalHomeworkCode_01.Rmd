@@ -1,21 +1,21 @@
 ---
 title: "AN588-Week-2-chuhan"
-author: "Author: Lia"
-date: "Date: 2023-09-20"
-output: html_document
+author: "Lia Bao"
+date: "2023-09-20"
+output: rmdformats::readthedown
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Homework1
+## Preparation
 Load the stringr package first. 
 ```{r}
 library(stringr)
 ```
 
-### Challenge 1
+## Challenge 1
 ```{r}
 v <-str_split("Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.", " ")
 v2 <- v[[1]]
@@ -25,7 +25,7 @@ Challenge 1 complete :)
 
 ***
 
-### Challenge 2
+## Challenge 2
 Define the matrix first.
 ```{r}
 m <- matrix(data=1:80, nrow=8, ncol=10, byrow=FALSE)
@@ -50,7 +50,7 @@ Challenge 2 complete :)
 
 ***
 
-### Challenge 3
+## Challenge 3
 Create the matrix first. 
 ```{r}
 a <- array(data=400:1, dim=c(5, 5, 4, 4))
@@ -84,7 +84,7 @@ Challenge 3 complete :)
 
 ***
 
-### Challenge 4
+## Challenge 4
 Create the whole list for Primates.
 ```{r}
 Lemuroidea <- c("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae",
@@ -112,7 +112,7 @@ Anyway, Challenge 4 complete :)
 
 ***
 
-### Challenge 5
+## Challenge 5
 
 1. Create the matrix.   
 ```{r}
@@ -143,5 +143,7 @@ str(df2)
 According to the result of str() command, the data types are converted successfully. 
 
 Challenge 5 complete :)
+
+***
 
 Homework 1 Complete :D
